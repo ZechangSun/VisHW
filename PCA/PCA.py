@@ -26,7 +26,7 @@ def PCA(img, dim=None):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-d", "--dim", type=int)
-    parser.add_argument("-p", "--path", type=str)
+    # parser.add_argument("-p", "--path", type=str)
     args = parser.parse_args()
     img, label, l, w = load_data()
     nv = PCA(img, dim=args.dim)
